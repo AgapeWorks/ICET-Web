@@ -1,11 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <link property="stylesheet" rel="stylesheet" href="CSS/Site.css" type="text/css" media="all">
+    <link property="stylesheet" rel="stylesheet" href="CSS/Style.css" type="text/css" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
 <body>
-    
+    <header class="bg-white">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center px-4">
+            <div class="d-flex align-items-center">
+                <img src="your-logo.png" alt="ICETM Logo" class="logo me-2">
+                <div class="logo-text">
+                    <h1 class="mb-0">ICETM 2025</h1>
+                    <p class="mb-0">AGW, India</p>
+                </div>
+            </div>
+            <div class="conference-title mt-3 mt-md-0">
+                <p class="mb-0">2025 the 8th International Conference on Educational Technology<br>Management (ICETM)
+                </p>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid px-4">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <!-- Home (no dropdown) -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <!-- About ICETM (hover dropdown, no icon) -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                                About ICETM
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Committee.html">Organizing committee</a></li>
+                                <li><a class="dropdown-item" href="Kspeaker.html">Keynote speakers</a></li>
+                                <li><a class="dropdown-item" href="InviteSpeaker.html">Invited speakers</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Call for Papers -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="papersDropdown" role="button" data-bs-toggle="dropdown">
+                                Call for Papers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Papers.html">Call for Papers</a></li>
+                                <li><a class="dropdown-item" href="Session1.html">Special Session 1</a></li>
+                                <li><a class="dropdown-item" href="SubmissionIntro.html">Submission Introduction</a></li>
+                                <li><a class="dropdown-item" href="#">Peer Review</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Registration (no dropdown) -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="Registration.html">Registration</a>
+                        </li>
+
+                        <!-- Attending -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="attendingDropdown" role="button" data-bs-toggle="dropdown">
+                                Attending
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Visa Info</a></li>
+                                <li><a class="dropdown-item" href="#">Accommodation</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Venue -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="venueDropdown" role="button" data-bs-toggle="dropdown">
+                                Venue
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Venue Details</a></li>
+                                <li><a class="dropdown-item" href="#">Travel Guide</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- History -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="historyDropdown" role="button" data-bs-toggle="dropdown">
+                                History
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Past Conferences</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Help -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="helpDropdown" role="button" data-bs-toggle="dropdown">
+                                Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Support</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <main>
+            <div class="main-content container p-0">
+                <section class="banner-section container">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+                <section class="content-section container py-5">
+                    <div class="pt-5">
+                        <h2 class="heading-txt">Welcome to ICETM 2025</h2>
+                        <hr class="mb-2" style="width: 100px; border-top: 2px solid #00AEEF;">
+                        <p>
+                            It is our great pleasure to welcome you all to 2025 the 8th International Conference on
+                            Educational Technology Management (ICETM), which will be held in AGW, India during October
+                            17-19, 2025, sponsored by AGW University, India, hosted by School of Education (Teachers
+                            College), AGW University, India.
+                        </p>
+                        <p>
+                            Over the past several years, the field of Educational Technology Management has undergone a
+                            significant transformation. The advancements in digital technologies have led to new
+                            educational
+                            paradigms, and the need for efficient management and effective implementation of these
+                            technologies has never been more pressing. This conference provides an opportunity to
+                            explore
+                            these changes and share experiences and knowledge to improve educational technology
+                            management
+                            practices.
+                        </p>
+                        <p>
+                            ICETM 2025 promises to be an exciting event with a range of informative and
+                            thought-provoking
+                            presentations, interactive forums, and engaging keynote speakers. This year's conference
+                            will
+                            include six tracks, covering topics such as instructional design, learning analytics,
+                            educational software development, and educational technology implementation. Through this
+                            conference, we hope to provide an opportunity for international collaboration,
+                            cross-disciplinary dialogue, and sharing of best practices that can help shape the future of
+                            educational technology management.
+                        </p>
+                        <p>
+                            We are honored to host this conference in AGW, India, a vibrant city. We are confident
+                            that this conference will provide a stimulating and rewarding experience for all
+                            participants.
+                        </p>
+                        <p>
+                            We look forward to your active participation and wish you a pleasant and productive
+                            conference.
+                        </p>
+                    </div>
+                    <div class="pt-5">
+                        <h2 class="heading-txt">Conference Proceedings</h2>
+                        <hr class="mb-2" style="width: 100px; border-top: 2px solid #00AEEF;">
+                        <p>
+                            Submitted papers will be peer reviewed by conference committees, and accepted papers after
+                            proper registration and presentation will be published in the International Conference
+                            Proceedings.
+                        </p>
+                    </div>
+                    <div class="pt-5">
+                        <h2 class="heading-txt">Conference History</h2>
+                        <hr class="mb-2" style="width: 100px; border-top: 2px solid #00AEEF;">
+                        <div class="container py-5">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-0 border">
+                                <!-- Event Card Start -->
+                                <div class="col border">
+                                    <div class="text-center p-3 d-flex flex-column h-100">
+                                        <h5 class="text-primary mb-2">ICETM 2018</h5>
+                                        <hr class="mx-auto mb-2" style="width: 40px; border-top: 2px solid #00AEEF;">
+                                        <p class="mb-3 small">Dec. 19-21, 2018<br>University of Barcelona, Spain</p>
+                                        <div class="img-wrapper mt-auto">
+                                            <img src="images/1.jpg" alt="ICETM 2018" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Repeat -->
+                                <div class="col border">
+                                    <div class="text-center p-3 d-flex flex-column h-100">
+                                        <h5 class="text-primary mb-2">ICETM 2019</h5>
+                                        <hr class="mx-auto mb-2" style="width: 40px; border-top: 2px solid #00AEEF;">
+                                        <p class="mb-3 small">Dec. 18-20, 2019<br>University of Barcelona, Spain</p>
+                                        <div class="img-wrapper mt-auto">
+                                            <img src="images/1.jpg" alt="ICETM 2019" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col border">
+                                    <div class="text-center p-3 d-flex flex-column h-100">
+                                        <h5 class="text-primary mb-2">ICETM 2019</h5>
+                                        <hr class="mx-auto mb-2" style="width: 40px; border-top: 2px solid #00AEEF;">
+                                        <p class="mb-3 small">Dec. 18-20, 2019<br>University of Barcelona, Spain</p>
+                                        <div class="img-wrapper mt-auto">
+                                            <img src="images/1.jpg" alt="ICETM 2019" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col border">
+                                    <div class="text-center p-3 d-flex flex-column h-100">
+                                        <h5 class="text-primary mb-2">ICETM 2019</h5>
+                                        <hr class="mx-auto mb-2" style="width: 40px; border-top: 2px solid #00AEEF;">
+                                        <p class="mb-3 small">Dec. 18-20, 2019<br>University of Barcelona, Spain</p>
+                                        <div class="img-wrapper mt-auto">
+                                            <img src="images/1.jpg" alt="ICETM 2019" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pt-5">
+                        <div class="py-5" style="background-color: #0082A3;">
+                            <div class="container">
+                              <div class="row g-4 text-center justify-content-center">
+                                
+                                <div class="col-6 col-md-3">
+                                  <div class="resource-item p-3">
+                                    <div class="icon mb-3">
+                                        <i class="fa-solid fa-newspaper" style="font-size: 48px;"></i>
+                                    </div>
+                                    <p class="mb-0">Paper Template</p>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-6 col-md-3">
+                                  <div class="resource-item p-3">
+                                    <div class="icon mb-3">
+                                        <i class="fa-solid fa-file-lines" style="font-size: 48px;"></i>
+                                    </div>
+                                    <p class="mb-0">Call for Paper Brochure</p>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-6 col-md-3">
+                                  <div class="resource-item p-3">
+                                    <div class="icon mb-3">
+                                        <i class="fa-solid fa-file-word" style="font-size: 48px;"></i>
+                                    </div>
+                                    <p class="mb-0">Online Submission</p>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-6 col-md-3">
+                                  <div class="resource-item p-3">
+                                    <div class="icon mb-3">
+                                      <i class="fa-solid fa-user-plus" style="font-size: 48px;"></i>
+                                    </div>
+                                    <p class="mb-0">Delegate Registration</p>
+                                  </div>
+                                </div>
+                          
+                              </div>
+                            </div>
+                        </div>
+                          
+                    </div>
+                    <div>
+                        <div class="news-section py-5">
+                            <h2 class="heading-txt">Conference History</h2>
+                            <hr class="mb-2" style="width: 100px; border-top: 2px solid #00AEEF;">
+                            <div class="container">
+                              <div class="news-list">
+                                <div class="news-item">
+                                  <span class="date">April 20, 2025 -</span> ICETM 2024 Proceedings has been indexed by <a href="#">Ei Compendex</a> and <a href="#">Scopus</a>.
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">March 13, 2025 -</span> ICETM 2024 Proceedings (ISBN: 979-8-4007-1746-8) has been archived in <a href="#">ACM Digital Library</a>.
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">February 21, 2025 -</span> Prof. Qing Li (IEEE, AAIA and IET Fellow) of The Hong Kong Polytechnic University, Hong Kong confirms to deliver the keynote speech.
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">February 14, 2025 -</span> Warmly welcome Assoc. Prof. Anton Sukhov, Ural Federal University, Russia and Assoc. Prof. Haibing Hou of Guangdong Open University, India to deliver invited speeches.
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">February 10, 2025 -</span> Assoc. Prof. Xiang Feng, Assoc. Prof. Yajun Wei, Assoc. Prof. Wei Wang and Assoc. Prof. Habibullah Shah confirm to deliver invited speeches. Warmly welcome!
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">January 5, 2025 -</span> ICETM 2025 call for paper is available now. (<a href="#">Download</a>)
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">December 30, 2024 -</span> The conference venue of ICETM 2025 is AGW University, India.
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">December 20, 2024 -</span> The 8th International Conference on Educational Technology Management (ICETM 2025) will be held in AGW, India during October 17-19, 2025.
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">September 11, 2024 -</span> Welcome Prof. Dave Towey of University of Nottingham Ningbo India, India to deliver a keynote speech.
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">August 11, 2024 -</span> Per the requests from potential participants, the submission deadline extends to September 10, 2024.
+                                </div>
+                                <div class="news-item">
+                                  <span class="date">July 8, 2024 -</span> Welcome Assoc. Prof. Xing Li, Assoc. Prof. Jingwen Yi, Assoc. Prof. Qimin Xiao, Assoc. Prof. Hui Shi etc. to join in the technical committee.
+                                </div>
+                              </div>
+                              <div class="mt-4">
+                                <a href="#" class="btn-readmore text-white">Read More</a>
+                              </div>
+                            </div>
+                        </div>
+                           
+                    </div>
+                </section>
+            </div>
+        </main>
+
+    <script src="Custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

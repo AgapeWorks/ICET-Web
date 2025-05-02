@@ -1,0 +1,160 @@
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: transparent !important;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+    height: 500px; /* or any height you want */
+    overflow: hidden;
+  }
+  #carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* maintain aspect ratio, fill container */
+  }
+
+.img-wrapper {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    overflow: hidden;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop and fill nicely */
+  }
+
+  .resource-item {
+    color: white;
+    background: transparent;
+    transition: transform 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .resource-item:hover {
+    transform: translateY(-8px);
+    color: #002F5A; /* Dark blue text on hover */
+  }
+  
+  .resource-item i {
+    transition: transform 0.3s ease;
+  }
+  
+  .resource-item:hover i {
+    transform: scale(1.1);
+  }
+
+  
+  .news-section {
+    background-color: #ffffff;
+  }
+  
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .news-item {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .news-item .date {
+    color: #e60000;
+    font-weight: bold;
+  }
+  
+  .news-item a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .btn-readmore {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .btn-readmore:hover {
+    background-color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .news-item {
+      font-size: 14px;
+    }
+  }
+
+  .larg-content{
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+
+  .Kspeaker-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .image-wrapper {
+    flex-shrink: 0;
+  }
+  
+  .Kspeaker-image {
+    width: 130px;
+    height: auto;
+    border-radius: 2px;
+  }
+  
+  .Kspeaker-details {
+    flex: 1;
+  }
+  
+  .Kspeaker-details h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .Kspeaker-details .titles {
+    font-weight: normal;
+    font-size: 15px;
+  }
+  
+  .Kspeaker-details h3 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #333;
+    margin: 5px 0 15px 0;
+  }
+  
+  .Kspeaker-details p {
+    color: #444;
+    text-align: justify;
+  }
+  
+  .speaker-image{
+    height: 139px; 
+    width:120px; 
+    float: left; 
+    margin-left:0px; 
+    margin-right:10px; 
+    margin-top:0px; 
+    margin-bottom:0px; 
+    object-fit: cover;
+  }
+
+  .sub-heading{
+    color: var(--primary-color);
+  }

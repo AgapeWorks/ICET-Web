@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #0088a9;
+    --secondary-color: #ffff;
+    --text-color: #847988;
+    --font-family: "Sofis Sans",sans-serif;
+    --font-size: 20px;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  p{
+    font-size: 16px;
+    margin-bottom: 1.5em;
+  }
+
+  a{
+    text-decoration: none !important;
+    color: var(--primary-color) !important;
+  }
+
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-family);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover , .btn:hover {
+    color: var(--primary-color);
+  }
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  .logo-text h1 {
+    font-size: 24px;
+    color: #007c92;
+    margin-bottom: 5px;
+  }
+  .logo-text p {
+    font-size: 14px;
+    color: #007c92;
+  }
+  .conference-title {
+    font-size: 14px;
+    text-align: right;
+    color: #000;
+  }
+  .navbar-nav .nav-link.active ,.nav-link:hover{
+    background-color: #0088a9;
+    border-radius: 0;
+  }
+  .navbar {
+    background-color: #00175A;
+  }
+  .nav-link {
+    color: #fff !important;
+    padding: 20px 20px !important;
+  }
+
+  /* Hover dropdown for large screens */
+@media (min-width: 992px) {
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+  }
+  
+  .dropdown-menu{
+    background-color: #00175A !important;
+    border-radius: 0px !important;
+    
+  }
+  
+  .dropdown-item{
+    color: #fff !important;
+  }
+  .dropdown-item:hover{
+    color: #fff !important;
+    background-color: #0088a9 !important;
+  }
+
+  .main-content{
+    max-width: 80vw !important;
+  }
