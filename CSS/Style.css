@@ -158,3 +158,133 @@
   .sub-heading{
     color: var(--primary-color);
   }
+
+  /* register css */
+
+  .icetis-heading {
+    color: #003366;
+  }
+
+  .icetis-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+  }
+
+  .icetis-table-header,
+  .icetis-table-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .icetis-table-header {
+    background: #f4f4f4;
+    font-weight: bold;
+  }
+
+  .icetis-table-row {
+    background: #fff;
+    font-weight: normal;
+    border-top: 1px solid #ccc;
+  }
+
+  .icetis-cell {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+    border-right: 1px solid #ccc;
+  }
+
+  .icetis-cell:last-child {
+    border-right: none;
+  }
+
+  @media (max-width: 600px) {
+
+    .icetis-cell {
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .icetis-cell:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .icetis-section {
+    margin-bottom: 25px;
+  }
+
+  .icetis-list {
+    padding-left: 20px;
+  }
+
+  .icetis-email {
+    font-weight: bold;
+  }
+
+    .icetm-important {
+      font-weight: bold;
+    }
+
+    .icetm-links a {
+      color: #0077aa;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .icetm-links a:hover {
+      text-decoration: underline;
+    }
+
+    .icetm-red {
+      color: red;
+      font-weight: bold;
+    }
+
+    .icetm-section {
+      margin-bottom: 20px;
+    }
+
+    .icetm-email {
+      color: #0077aa;
+      text-decoration: none;
+    }
+
+    .icetm-email:hover {
+      text-decoration: underline;
+    }
+  
+    /* general program css */
+
+    .date-col {
+      background-color: #90c9ff;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+    .date-col span {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+      color: #000;
+    }
+    .event-block {
+      border-bottom: 1px solid #dee2e6;
+      padding: 10px 0;
+    }
+    .event-time {
+      font-weight: bold;
+      min-width: 120px;
+      color: #333;
+    }
+    @media (max-width: 576px) {
+      .event-block {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+      }
+      .event-time {
+        margin-bottom: 5px;
+      }
+    }
